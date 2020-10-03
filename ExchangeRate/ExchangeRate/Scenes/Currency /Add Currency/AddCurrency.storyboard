@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ax-EG-w5l">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Currency View Controller-->
+        <scene sceneID="oV3-yP-2A5">
+            <objects>
+                <viewController storyboardIdentifier="AddCurrencyViewController" id="HOr-CG-S2A" customClass="AddCurrencyViewController" customModule="ExchangeRate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="isN-iJ-7E2">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fRU-os-YvI">
+                                <rect key="frame" x="84" y="155.66666666666666" width="728" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kze-NS-o24">
+                                        <rect key="frame" x="0.0" y="0.0" width="728" height="32"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <state key="normal" title="Add currency pair ">
+                                            <color key="titleColor" name="ERBlue"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchUpInsideAddCurrencyTitleButton:" destination="HOr-CG-S2A" eventType="touchUpInside" id="yia-1A-j8n"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a currency pair to compare their live rates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvA-57-oB4">
+                                        <rect key="frame" x="0.0" y="38" width="728" height="20"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" name="ERBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJK-cQ-2wD">
+                                <rect key="frame" x="423" y="93.666666666666671" width="50" height="50.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="q31-Eo-YBG"/>
+                                    <constraint firstAttribute="width" secondItem="mJK-cQ-2wD" secondAttribute="height" multiplier="1:1" id="tMm-LB-pmg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98431372549999996" green="0.98039215690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Add"/>
+                                <connections>
+                                    <action selector="didTouchUpInsideAddCurrencyButton:" destination="HOr-CG-S2A" eventType="touchUpInside" id="ZiX-4X-As8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fRU-os-YvI" firstAttribute="trailing" secondItem="EQ3-CU-LEb" secondAttribute="trailing" constant="-40" id="1fQ-bJ-ASZ"/>
+                            <constraint firstItem="fRU-os-YvI" firstAttribute="top" secondItem="mJK-cQ-2wD" secondAttribute="bottom" constant="12" id="inG-c2-Sjp"/>
+                            <constraint firstItem="mJK-cQ-2wD" firstAttribute="centerY" secondItem="EQ3-CU-LEb" secondAttribute="centerY" constant="-100" id="moV-2Y-gmZ"/>
+                            <constraint firstItem="fRU-os-YvI" firstAttribute="leading" secondItem="EQ3-CU-LEb" secondAttribute="leading" constant="40" id="of7-YG-6oF"/>
+                            <constraint firstItem="mJK-cQ-2wD" firstAttribute="centerX" secondItem="EQ3-CU-LEb" secondAttribute="centerX" id="zrI-Du-jgW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EQ3-CU-LEb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eYY-hG-Rop"/>
+                    <connections>
+                        <outlet property="addCurrencyButton" destination="mJK-cQ-2wD" id="jJh-0Z-SRp"/>
+                        <outlet property="addCurrencyDetailLabel" destination="KvA-57-oB4" id="czQ-lr-WfD"/>
+                        <outlet property="addCurrencyTitleButton" destination="kze-NS-o24" id="Chf-l1-4Ac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXB-uC-TgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.81159420289862" y="136.60714285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YnQ-UO-VVk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ax-EG-w5l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gm4-7W-gNs">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HOr-CG-S2A" kind="relationship" relationship="rootViewController" id="pNO-PF-rch"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oND-Cc-oJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133.33333333333334" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Add" width="40" height="40"/>
+        <namedColor name="ERBlack">
+            <color red="0.097999997437000275" green="0.10999999940395355" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ERBlue">
+            <color red="0.0" green="0.45899999141693115" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

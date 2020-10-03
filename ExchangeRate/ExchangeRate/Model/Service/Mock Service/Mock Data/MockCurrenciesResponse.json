@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "name": "British Pound",
+        "code": "GBP",
+    },
+    {
+        "id": "5",
+        "name": "Euro",
+        "code": "EUR",
+    },
+    {
+        "id": "9",
+        "name": "United States Dollar",
+        "code": "USD",
+    },
+    {
+        "id": "2",
+        "name": "Swedish Krona",
+        "code": "SEK",
+    },
+    {
+        "id": "3",
+        "name": "Danish Krone",
+        "code": "DKK",
+    },
+    {
+        "id": "4",
+        "name": "Polish Zloty",
+        "code": "PLN",
+    },
+    {
+        "id": "6",
+        "name": "Norwegian Krone",
+        "code": "NOK",
+    },
+    {
+        "id": "7",
+        "name": "Hungarian Forint",
+        "code": "HUF",
+    },
+    {
+        "id": "8",
+        "name": "Czech Koruna",
+        "code": "CZK",
+    },
+    {
+        "id": "10",
+        "name": "Singapore Dollar",
+        "code": "SGD",
+    },
+    {
+        "id": "11",
+        "name": "Hong Kong Dollar",
+        "code": "HKD",
+    }
+]

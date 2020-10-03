@@ -1,0 +1,17 @@
+/* 
+  Accessibility.strings
+  ExchangeRate
+
+  Created by Takomborerwa Mazarura on 20/03/2020.
+  Copyright © 2020 Takomborerwa. All rights reserved.
+*/
+
+
+"currencyPair.secondCurrencyNameAndCode" = "Second Currency name and code";
+"currencyPair.exchangeRateEquals" = "One %@ is %@ ";
+
+"currency.add" = "Add Currency Pair";
+"currency.flag" = "Currency Flag";
+"currency.flagDescribed" = "%@ Flag";
+"currency.code" = "Currency Code";
+"currency.name" = "Currency Name";

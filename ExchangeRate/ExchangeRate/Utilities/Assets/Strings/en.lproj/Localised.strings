@@ -1,0 +1,16 @@
+/* 
+  Localised.strings
+  ExchangeRate
+
+  Created by Takomborerwa Mazarura on 07/03/2020.
+*/
+
+"ok" = "Ok";
+"error.title" = "Sorry";
+"error.genericMessage" = "There was an error. Please try again";
+
+"currencies.title" = "Currencies";
+"currencies.add" = "Add currency pair";
+"currencies.choose" = "Choose a currency pair to compare their live rates";
+
+"currencies.alreadySelected" = "You have already selected this currency for your currency pair: %@. Please select another.";
